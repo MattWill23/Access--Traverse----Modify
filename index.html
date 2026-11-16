@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access, Traverse, & Modify</title>   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="tag">
+  <h1 id="greeting">HELLO</h1>
+  <p id="myName">my name is</p>
+  <h2 id="studentName">Your Name Here</h2>
+</div>
+
+    <script>
+const greeting = document.getElementById("greeting")
+greeting.textContent = "Salutations";
+
+const myName = document.getElementById("myName")
+myName.style.backgroundColor = "lightblue";
+myName.style.textColor = "blue";
+
+
+const studentName = document.getElementById("studentName")
+studentName.textContent = "Matt";
+studentName.style.backgroundColor = "violet";
+
+const tag = document.getElementById("tag")
+tag.style.backgroundColor = "lightpink";
+
+
+console.log(greeting)
+console.log(myName)
+      console.log("hello")
+    </script>
+</body>
+
+</html>

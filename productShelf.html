@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Shelf</title>
+</head>
+<body>
+
+<h2 id="shelfTitle">Store Shelf</h2>
+<p class="product">Notebook</p>
+<p class="product featured">Backpack</p>
+<p class="product">Pencil Case</p>
+<p class="product featured">Water Bottle</p>
+
+<script>
+  let products = document.getElementsByClassName("product");
+
+  let firstFeatured = document.querySelector(".featured");
+
+  let allFeatured = document.querySelectorAll(".featured");
+
+  console.log(products.length);
+  console.log(allFeatured.length);
+
+  firstFeatured.style.backgroundColor = "yellow";
+
+  allFeatured[1].style.backgroundColor = "orange";
+
+  products[0].textContent = "Sold Out";
+  products[0].style.color = "gray";
+
+  console.log(firstFeatured.textContent);
+</script>
+
+</body>
+</html>
